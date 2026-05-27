@@ -14,8 +14,7 @@
 
 | 参数 | 说明 | 默认值 |
 |------|------|--------|
-| `output_path` | 周报保存位置 | `docs/weekly-report/` |
-| `gitignore` | 是否添加到 .gitignore | false |
+| `output_path` | 周报保存位置 | `桌面/周报/`（如 `C:/Users/用户名/Desktop/周报/`） |
 | `extra_work` | 额外工作事项 | 空 |
 | `next_week_plan` | 下周工作计划 | 空 |
 
@@ -27,10 +26,7 @@
 
 ## 项目路径格式
 
-支持以下路径格式：
-- 绝对路径：`E:/Projects/frontend`
-- 相对路径：`./frontend`
-- 多个项目：用逗号分隔 `E:/Projects/frontend, E:/Projects/backend`
+支持绝对路径、相对路径、多项目逗号分隔，详见 [高级功能 - 路径格式规范](./advanced-features.md#路径格式规范)。
 
 ## 格式类型
 

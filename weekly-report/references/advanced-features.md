@@ -10,21 +10,16 @@
 - 前后端分离项目
 - 多个微服务项目
 
-### 路径格式
+### 路径格式规范
 
 支持以下路径格式：
-```
-# 绝对路径
-E:/Projects/frontend
-E:\Projects\backend
 
-# 相对路径
-./frontend
-../backend
-
-# 多个项目（逗号分隔）
-E:/Projects/frontend, E:/Projects/backend, E:/Projects/admin
-```
+| 格式 | 示例 | 说明 |
+|------|------|------|
+| 绝对路径 | `E:/Projects/frontend` | 完整路径 |
+| 绝对路径（反斜杠） | `E:\Projects\backend` | Windows 风格 |
+| 相对路径 | `./frontend` | 相对于当前目录 |
+| 多个项目 | `E:/Projects/frontend, E:/Projects/backend` | 逗号分隔 |
 
 ### 项目名称解析
 
@@ -89,35 +84,6 @@ feat: add login API integration
 1. 提示用户确认日期范围是否正确
 2. 提示用户确认项目路径是否正确
 3. 提示用户确认是否在正确的分支上
-
----
-
-## .gitignore 集成
-
-当用户选择将周报目录添加到 .gitignore 时：
-
-### 检查 .gitignore 文件
-
-```bash
-# 检查 .gitignore 是否存在
-if [ -f .gitignore ]; then
-    # 检查是否已包含周报目录
-    if ! grep -q "docs/weekly-report/" .gitignore; then
-        echo "docs/weekly-report/" >> .gitignore
-    fi
-else
-    # 创建 .gitignore 文件
-    echo "docs/weekly-report/" > .gitignore
-fi
-```
-
-### 添加内容
-
-在 .gitignore 文件末尾添加：
-```
-# 周报目录
-docs/weekly-report/
-```
 
 ---
 
