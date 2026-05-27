@@ -5,7 +5,7 @@
 ## 一键安装
 
 ```bash
-pnpx skills add Gahotx/skills --skill='*' -g
+npx skills add Gahotx/skills --skill='*' -g
 ```
 
 ## 包含的 Skills
@@ -13,7 +13,7 @@ pnpx skills add Gahotx/skills --skill='*' -g
 ### [git-commit-cn](./git-commit-cn/)
 
 ```bash
-pnpx skills add Gahotx/skills --skill git-commit-cn
+npx skills add Gahotx/skills --skill git-commit-cn
 ```
 
 使用约定式提交规范生成中文 git commit 信息。
@@ -25,7 +25,7 @@ pnpx skills add Gahotx/skills --skill git-commit-cn
 ### [weekly-report](./weekly-report/)
 
 ```bash
-pnpx skills add Gahotx/skills --skill weekly-report
+npx skills add Gahotx/skills --skill weekly-report
 ```
 
 从 Git 项目提取 commit 记录，自动生成结构化的工作周报。
