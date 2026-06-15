@@ -45,3 +45,6 @@ metadata:
 - 日期格式统一使用 `YYYY-MM-DD`，周报标题格式为 `YYYY.MM.DD - YYYY.MM.DD`
 - 保存 markdown 文件后，额外输出纯文本版本方便复制（详见 [输出格式](./references/output-format.md)）
 - 空内容处理规则详见 [高级功能](./references/advanced-features.md)
+- **按项目分类时**：项目下直接列工作内容，不要加"功能开发"等子标题（详见 [输出格式](./references/output-format.md)）
+- **Commit 精炼**：不要直接罗列 commit，需合并相似提交、提炼核心内容（详见 [执行流程](./references/execution-flow.md)）
+- **多项目计划**：多个项目时分别询问每个项目的下周计划（详见 [自定义选项](./references/custom-options.md)）
